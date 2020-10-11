@@ -45,16 +45,12 @@
             background-color: white;
         }
 
-        body#home {
-            overflow-y: hidden;
-        }
-
         body#home footer {
             position: relative;
             text-align: center;
             border-top: solid;
             border-width: 0.5px;
-            top: 140px;
+            top: 50px;
             margin: 10%;
         }
 
@@ -83,7 +79,7 @@
         }
 
         div#main p,  div#main h2{
-            max-width: 500px;
+            max-width: 400px;
             float: left;
             margin-left: 20px;
         }
@@ -134,8 +130,8 @@
             font-size: 85%;
         }
 
-        h1,h2,h3, li {
-            font-family: 'Libre Baskerville', Tahoma, sans-serif;
+        h1,h2,h3, nav li {
+            font-family: 'Libre Baskerville', serif;
         }
 
 
@@ -185,8 +181,9 @@
             font-size: 12pt;
         }
 
-        p {
-            font-family: 'Montserrat', Tahoma, sans-serif;
+        p, li{
+            font-family: 'Montserrat',sans-serif;
+            font-size: 90%;
         }
 
         ul li {
