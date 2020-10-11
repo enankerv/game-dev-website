@@ -1,0 +1,287 @@
+
+        /* ------------------------------------------------------
+        Stylesheet Guide
+        ------------------------------------------------------
+
+        This Stylesheet is broken up by sections:
+            
+            Fonts: Containing imports for various font styles and font faces used for the website 
+            Element Stylings: CSS stylings of elements within the pages
+            Class Stylings: CSS stylings for various classes used within the pages
+
+        Each of these sections is indicated by a comment at the start of it and the sections are presented in the order above from top to bottom.
+
+        Each section individually is sorted in alphabetical order.
+
+        COLOR RATIONAL:
+
+        I chose to keep the main white and black colors for the page. I liked how clean and spaced out everything looked with the white background and wanted to
+        introduce some contrast with black. It gives the page a clean simple look which was the idea for the website (a simple way to learn how to develop video games).
+        I chose some blue accents after a long while researching what 'techie' colors looked like. I found that cooler tones and blues especially are the most popular colors
+        chosen by tech companies and as such are associated with tech. I wanted a lighter blue specifically because I wanted the cool and calm feelings of blue instead
+        of the sadness instilled by incredibly deep blue colors. It also served as a good contrast to some of the darker text that I laid ontop of it. 
+
+        For the getting started page I did not want to overload it by making the filled sections blue as I felt that keeping blue for highlighting important information was
+        what I wanted to do with the color, so I simply chose a light grey to help divide the page into horizontal sections against the white background and also let the
+        black text and blue headers shine through it.
+
+        ------------------------------------------------------ */
+        /*Fonts*/
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+        @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+        /*Element Stylings */
+
+
+        a, a:visited {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        body {
+            margin:0px;
+            padding:0px;
+            overflow-x: hidden;
+            background-color: white;
+        }
+
+        body#home {
+            overflow-y: hidden;
+        }
+
+        body#home footer {
+            position: relative;
+            text-align: center;
+            border-top: solid;
+            border-width: 0.5px;
+            top: 140px;
+            margin: 10%;
+        }
+
+        body#home h1 {
+            text-align: center;
+            border-style: solid;
+            border-width: 2px;
+            margin: 50px auto;
+            font-size: 48pt;
+            width: 1000px;
+            box-sizing: border-box;
+            background-color: #5d83fd;
+        }
+
+        div#main {
+            float: left;
+            width: 60%;
+            height: 400px;
+            border-style: solid;
+            box-sizing: border-box
+        }
+
+        div#main h2 {
+            clear: both;
+            font-size: 135%;
+        }
+
+        div#main p,  div#main h2{
+            max-width: 500px;
+            float: left;
+            margin-left: 20px;
+        }
+
+        div#content {
+            margin: 0px 10%;
+        }
+
+
+        div#comparables {
+            width: 959px;
+            height:200px;
+            margin: 0 auto;
+        }
+
+        div.Column img {
+            width: 25%;
+        }
+
+        div#sidebar {
+            float: left;
+            width: 39%;
+            margin: 5px;
+            height: 350px;
+            border-top: solid;
+            text-align: center;
+            box-sizing: border-box;
+            
+        }
+
+        div#sidebar hr {
+            position: relative;
+            background-color: black;
+            border-color: black;
+            border-width: 0.5px;
+        }
+
+        figure {
+            display: inline-block;
+        }
+
+        footer {
+            clear:both;
+            margin: 0 10%;
+        }
+
+        footer i {
+            font-size: 85%;
+        }
+
+        h1,h2,h3, li {
+            font-family: 'Libre Baskerville', Tahoma, sans-serif;
+        }
+
+
+
+        h2 {
+            color: #5d83fd;
+        }
+
+
+        h3 {
+            color: #86a2fe;
+        }
+
+        img#pic-of-me {
+            display:inline-block;
+            max-width: 499px;
+            vertical-align: middle;
+            position: relative;
+            top: 95px;
+            left: 40px;
+            width: 20%;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            top:0%;
+            background-color: white;
+            text-align: center;
+            border-bottom: solid;
+            border-width: 0.5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        nav a, a:visited {
+            text-decoration: none;
+        }
+
+        nav li {
+            display: inline;
+            list-style: none;
+            text-decoration: None;
+            padding-top: 5px;
+            padding-right: 30px;
+            font-size: 12pt;
+        }
+
+        p {
+            font-family: 'Montserrat', Tahoma, sans-serif;
+        }
+
+        ul li {
+            margin-bottom: 5%;
+        }
+
+        /*Class Stylings*/
+
+        .bluebacked {
+            background-color: #5d83fd;
+        }
+
+        .Column {
+            width: 45%;
+            margin: 0% 2%;
+            float:left;
+            text-align: center;
+        }
+
+        .filled {
+            background-color: grey;
+        }
+
+        .startingBlock {
+            min-height: 250px;
+            max-height: 250px;
+            text-align: center;
+        }
+
+        .startingBlock div.DescriptionCol {
+            max-width: 500px;
+            margin-left: 5%;
+            float: left;
+        }
+
+        .startingBlock  div.imageHolder {
+            margin-left: 5%;
+            float: right;
+            width: 25%;
+            margin-top: 25px;
+            margin-right: 135px;
+            text-align: center;
+        }
+
+        .startingBlock img {
+            max-width: 80%;
+            max-height: 210px;
+            margin: auto 0;
+        }
+
+        .startingBlock.filled {
+            background-color: #C1C6D7;
+        }
+
+        .startingBlock.filled  div.DescriptionCol {
+            margin-right: 5%;
+            float: right;
+        }
+
+        .startingBlock.filled  div.imageHolder {
+            margin-left: 5%;
+            float: left;
+            width: 25%;
+            margin-left: 140px;
+            text-align: center;
+        }
+
+        .subHeader {
+            position: relative;
+            font-size: 60px;
+            top: 50px;
+            left: 100px;
+        }
+
+        .page-description {
+            max-width: 500px;
+            float: right;
+            margin-right: 100px;
+            margin-top: 80px;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+            border-style: solid;
+            padding: 15px;
+        }
+
+        .pro-con {
+            float:left;
+            max-width: 200px;
+        }
+
+        .pro-con ul{
+            text-align: left;
+        }
+
+        .pro-con h3{
+            border-bottom: solid;
+            border-width: 0.5px;
+        }
