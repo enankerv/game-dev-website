@@ -261,9 +261,7 @@
         .subHeader {
             position: relative;
             font-size: 60px;
-            top: 50px;
-            left: 100px;
-            padding-right: 40px;
+            padding: 100px;
         }
 
         .page-description {
